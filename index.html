@@ -1,1 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+             background-color: white;
+        }
 
+        header {
+            background-color: #FFA500;
+            padding: 20px;
+            color: #FFF;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            border-bottom: 1px solid #CCC;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #FFA500;
+            padding: 10px;
+            color: #FFF;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i.pinimg.com/originals/88/0d/4f/880d4f0de6c0af5b28d41ca6db2fc4ef.png" alt="Burger King Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"><strong>Menu</strong></a></li>
+                <li><a href="#"><strong>Sobre</strong></a></li>
+                <li><a href="#"><strong>Localizações</strong></a></li>
+                <li><a href="#"><strong>Contato</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 style="color:red">Ofertas Especiais</h2>
+            <div class="offer">
+                <h3 style="color:red">Combo Whopper</h3>
+                <img src="https://static.ifood-static.com.br/image/upload/t_high/pratos/6e73dce2-a17f-4aef-9035-1409cea198fe/202210041444_5868_i.jpg">
+                <p style="color:orange">Aproveite o delicioso Whopper acompanhado de batatas fritas e refrigerante por apenas R$ 19,90.</p>
+            </div>
+            <div class="offer">
+                <h3 style="color:red">Chicken Royale</h3>
+                <img src="https://www.hungryjacks.com.au/Upload/HJ/Media/UNO/HJ16B0-1.PNG">
+                <p style="color:orange">Experimente o saboroso Chicken Royale por apenas R$ 15,90. Não perca!</p>
+            </div>
+            <div class="offer">
+                <h3 style="color:red">Double Cheeseburger</h3>
+                <img src="https://uploads.metropoles.com/wp-content/uploads/2019/11/29165601/bobs.jpg">
+                <p style="color:orange">Leve dois Double Cheeseburgers por apenas R$ 12,90. Imperdível!</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2 style="color:darkblue">Menu</h2>
+            <div class="menu-item">
+                <h3 style="color:red">Whopper</h3>
+                <p style="color:orange">Hambúrguer de carne grelhada, queijo, alface, tomate, cebola e maionese.</p>
+                <p style="color:darkblue">Preço: R$ 15,00</p>
+            </div>
+            <div class="menu-item">
+                <h3 style="color:red">Big King</h3>
+                <p style="color:orange">Dois hambúrgueres de carne, queijo, alface, cebola, picles e molho Big King.</p>
+                <p style="color:darkblue">Preço: R$ 17,00</p>
+            </div>
+            <div class="menu-item">
+                <h3 style="color:red">Chicken Sandwich</h3>
+                <p style="color:orange">Filé de frango grelhado, alface, tomate e maionese.</p>
+                <p style="color:darkblue">Preço: R$ 12,00</p>
+                <h1 style="color:red">localização</h1>
+                <img src="https://pyxis.nymag.com/v1/imgs/7b4/023/f1cf27d870af3926fb48683b273711ad04-17-google-maps-fast-food.rsocial.w900.jpg">
+            </div>
+        </section>
+    </main>
+    <footer>
+    <p>&copy; 2024 Burger King. Todos os direitos reservados.</p>
+        
+    </footer>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programa de Fidelidade Burger King</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #FFA500;
+    }
+
+    p {
+        color: #333;
+    }
+
+    .loyalty-card {
+        width: 200px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .loyalty-card img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    form {
+        margin-top: 30px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: calc(100% - 12px);
+        padding: 6px;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        background-color: #FFA500;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #FF7F00;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1 style="color:red">Programa de Fidelidade Burger King</h1>
+    <p style="color:orange">Seja bem-vindo ao nosso programa de fidelidade! Apresente este cartão em suas compras para acumular pontos e obter descontos.</p>
+    <div class="loyalty-card">
+        <img src=https://i.pinimg.com/originals/88/0d/4f/880d4f0de6c0af5b28d41ca6db2fc4ef.png alt="Cartão de Fidelidade Burger King">
+    </div>
+    <p style="color:orange">Após acumular 10 pontos, você receberá um cupom de desconto de 10% na sua próxima compra!</p>
+    <h2 style="color:red">Inscreva-se agora!</h2>
+    <form>
+        <label for="name" style="color:red">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email" style="color:red">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" value="Inscrever-se">
+    </form>
+    <h2 style="color:red">Benefícios do Programa de Fidelidade</h2>
+    <ul>
+        <li style="color:orange">Descontos exclusivos para membros</li>
+        <li style="color:orange">Ofertas especiais em aniversários</li>
+        <li style="color:orange">Acesso antecipado a novos produtos</li>
+        <li style="color:orange">Convites para eventos exclusivos</li>
+    </ul>
+    <h2 style="color:red">Entre em Contato</h2>
+    <p style="color:orange">Se precisar de ajuda ou tiver alguma dúvida, entre em contato conosco através do email: contato@burgerking.com</p>
+</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burger King - Responsabilidade Social Corporativa</title>
+<style>
+/* CSS */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffae00;
+  padding: 20px;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: orange;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* JavaScript */
+#initiatives {
+  display: none;
+}
+
+button {
+  background-color: #ffae00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ffa300;
+}
+</style>
+</head>
+<body>
+<header>
+  <img src="https://i.pinimg.com/originals/88/0d/4f/880d4f0de6c0af5b28d41ca6db2fc4ef.png" style="height: 130px;">
+  <h1 style="color:white">Burger King</h1>
+  <nav>
+    <ul>
+      <li><a href="#"><strong>Home</strong></a></li>
+      <li><a href="#"><strong>Sobre</strong></a></li>
+      <li><a href="#"><strong>Responsabilidade Social</strong></a></li>
+      <li><a href="#"><strong>Contato</strong></a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h2 style="color:red">Nossa Responsabilidade Social Corporativa</h2>
+    <p id="message" style="color:orange">Clique no botão para saber mais sobre nossas iniciativas.</p>
+    <button onclick="showInitiatives()"><strong>Mostrar Iniciativas</strong></button>
+  </section>
+  <section id="initiatives">
+    <h2 style="color:red">Nossas Iniciativas</h2>
+    <ul>
+      <li style="color:orange">Programas de reciclagem para reduzir resíduos e promover a sustentabilidade ambiental.</li>
+      <li style="color:orange">Parcerias com organizações locais para apoiar causas sociais e comunitárias.</li>
+      <li style="color:orange">Compromisso com práticas trabalhistas justas e seguras em todas as etapas de nossa cadeia de suprimentos.</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2024 Burger King. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+function showInitiatives() {
+  var initiativesSection = document.getElementById("initiatives");
+  var message = document.getElementById("message");
+
+  if (initiativesSection.style.display === "none") {
+    initiativesSection.style.display = "block";
+    message.textContent = "Clique novamente para ocultar as iniciativas.";
+  } else {
+    initiativesSection.style.display = "none";
+    message.textContent = "Clique no botão para saber mais sobre nossas iniciativas.";
+  }
+}
+</script>
+
+</body>
+</html>
